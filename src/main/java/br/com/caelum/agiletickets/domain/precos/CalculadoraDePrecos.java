@@ -10,6 +10,8 @@ public class CalculadoraDePrecos {
 	public static BigDecimal calcula(Sessao sessao, Integer quantidade) {
 		BigDecimal preco;
 		
+		return sessao.calcula(quantidade);
+		/**
 		if(sessao.getEspetaculo().getTipo().equals(TipoDeEspetaculo.CINEMA) || sessao.getEspetaculo().getTipo().equals(TipoDeEspetaculo.SHOW)) {
 			//quando estiver acabando os ingressos... 
 			if((sessao.getTotalIngressos() - sessao.getIngressosReservados()) / sessao.getTotalIngressos().doubleValue() <= 0.05) { 
@@ -41,8 +43,8 @@ public class CalculadoraDePrecos {
 			//nao aplica aumento para teatro (quem vai é pobretão)
 			preco = sessao.getPreco();
 		} 
-
-		return preco.multiply(BigDecimal.valueOf(quantidade));
+*/
 	}
-
+	
 }
+		

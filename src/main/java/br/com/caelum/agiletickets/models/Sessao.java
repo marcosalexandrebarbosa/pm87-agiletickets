@@ -120,5 +120,10 @@ public class Sessao {
 	public BigDecimal getPreco() {
 		return preco;
 	}
+
+	public BigDecimal calcula(Integer quantidade) {
+		return this.espetaculo.getTipo().calcula(quantidade);
+		
+	}
 	
 }
